@@ -35,3 +35,60 @@ se anexa efecto hover en los iconos y texto
     /* 
     inidicamos que los iconos se adapten al contenido de la caja y que se ajusten a la derecha */
 }
+
+.nav__responsive-button-conteiner{
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    background-color: #3d7df5;
+    margin-top: -37px;
+    
+}
+.nav__responsive-button{
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+    
+}
+@media only screen and (max-width: 450px){
+    .nav__ul{
+        /* cuando la resolucion sea mas chica se desaparecera el nav ul (nav principal) */
+        display: none;
+    }
+
+    
+    .nav{
+        height: 37px;
+        width: 100%;
+        background-color: #377bfc;
+    } 
+
+    /* cuando la resolucion cambie hacemos que aparesca la resolucion para responsive */
+    .nav__responsive-ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        background-color: #679af8;
+        height: 100%;
+        margin-top: 37px;
+        
+    }
+    .nav__responsive-li{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .nav__responsive-li i{
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+        color: #0d28c4;
+    }
+    .nav__responsive-li a{
+        font-family: 'Antonio', sans-serif;
+        font-size: 25px;
+        color: #0d28c4;
+        text-decoration: none;
+    }
+  
+}
