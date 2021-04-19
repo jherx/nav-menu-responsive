@@ -7,8 +7,23 @@
 }
 .nav__li{
     display: inline-block;
-    padding: 10px;
-    color: #edf1ea;
+    padding: 13px;
+    color: #fff;
+}
+.nav__li:hover > a {
+color: #d3d1d4;
+}
+.nav__li:hover{
+    color: #d3d1d4;
+}
+.nav__li a{
+    color: #fff;
     font-family: 'Antonio', sans-serif;
-    font-size: 2em;
+    font-weight: 100;
+    text-decoration: none;
+}
+.nav__li i {
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
 }
