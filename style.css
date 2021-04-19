@@ -1,6 +1,7 @@
 
 .nav__responsive-ul{
     display: none;
+    /* el segundo menu aparecera cuando las resoluciones sean menores  */
 }
 .nav{
     background: #377bfa;
@@ -9,6 +10,7 @@
     display: inline-block;
     padding: 13px;
     color: #fff;
+    /* Se coloca un display block para que los elementos deltro del li se comporten como linea y con las propiedades del bloque */
 }
 .nav__li:hover > a {
 color: #d3d1d4;
@@ -16,6 +18,9 @@ color: #d3d1d4;
 .nav__li:hover{
     color: #d3d1d4;
 }
+/* 
+se anexa efecto hover en los iconos y texto
+*/
 .nav__li a{
     color: #fff;
     font-family: 'Antonio', sans-serif;
@@ -26,4 +31,7 @@ color: #d3d1d4;
     box-sizing: border-box;
     text-align: right;
     margin-right: 5px;
+
+    /* 
+    inidicamos que los iconos se adapten al contenido de la caja y que se ajusten a la derecha */
 }
