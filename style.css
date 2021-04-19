@@ -61,9 +61,9 @@ se anexa efecto hover en los iconos y texto
         height: 37px;
         width: 100%;
         background-color: #377bfc;
+        /* se le indica el ancho y alto del nav para la resolucion de movil de cambia el color del background a uno mas oscuro */
     } 
 
-    /* cuando la resolucion cambie hacemos que aparesca la resolucion para responsive */
     .nav__responsive-ul{
         display: block;
         position: absolute;
@@ -71,11 +71,12 @@ se anexa efecto hover en los iconos y texto
         background-color: #679af8;
         height: 100%;
         margin-top: 37px;
-        
+        /* con las nuevas propiedades optenidas del button conteiner se queda en position absolut y se le inidican las nuevas medidas del ancho y alto  */
     }
     .nav__responsive-li{
         width: 100%;
         padding: 10px 20px;
+        /* indicamos que se le da el ancho del 100% y un espaciado  */
     }
     .nav__responsive-li i{
         box-sizing: border-box;
@@ -83,12 +84,14 @@ se anexa efecto hover en los iconos y texto
         margin-right: 5px;
         width: 30px;
         color: #0d28c4;
+        /* se le otorgan prodiedades al los iconos similares a las del menu principal */
     }
     .nav__responsive-li a{
         font-family: 'Antonio', sans-serif;
         font-size: 25px;
         color: #0d28c4;
         text-decoration: none;
+        /* se le otorgan prodiedades al los iconos similares a las del menu principal */
     }
   
 }
