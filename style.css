@@ -41,11 +41,11 @@ se anexa efecto hover en los iconos y texto
     width: 100%;
     font-size: 25px;
     background-color: #3d7df5;
-    margin-top: -37px;
-    
+    margin-top: -74px;
+    z-index: 100;
 }
 .nav__responsive-button{
-    padding: 6px 20px;
+    padding: 14px 20px;
     text-align: right;
     width: 100%;
     
@@ -68,11 +68,24 @@ se anexa efecto hover en los iconos y texto
         display: block;
         position: absolute;
         width: 100%;
-        background-color: #679af8;
-        height: 100%;
         margin-top: 37px;
+        padding-top: 27px;
+        height: 37px;
         /* con las nuevas propiedades optenidas del button conteiner se queda en position absolut y se le inidican las nuevas medidas del ancho y alto  */
     }
+    .nav__li-conteiner{
+        position: relative;
+        top: -1000px;
+        height: calc(100vh - 64px); 
+        /* se hace un calculo con el alto con el viewport heigth usando la propiedad calc  */
+        background-color: #679af883;
+        transition: all 1s;
+        z-index: 1; 
+        /* se le indica que se le posisione por debajo de la los demas elementos con el z index */
+        height: 450px;
+        padding-top: 27px;
+    }
+
     .nav__responsive-li{
         width: 100%;
         padding: 10px 20px;
@@ -93,5 +106,8 @@ se anexa efecto hover en los iconos y texto
         text-decoration: none;
         /* se le otorgan prodiedades al los iconos similares a las del menu principal */
     }
-  
+    .nav__responsive-ul:hover > .nav__li-conteiner{
+    top: -27px;
+    }
+  /* se coloca un efecto hover para simular la pulsacion de un toque en un dispositivo movil */
 }
